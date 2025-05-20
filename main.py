@@ -33,7 +33,9 @@ def register_user(user_id: int):
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = update.effective_user.id
     register_user(user_id)
-    await update.message.reply_text("¡Bienvenido a ChatGPT Contigo Bot!")
+    await update.message.reply_text(
+        "¡Hola! Soy AIforlife33 🤖✨\nEstoy aquí para responder tus preguntas y generar imágenes con inteligencia artificial.\n\nEscribe tu mensaje o usa el comando /imagen seguido de una idea."
+    )
 
 async def imagen(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
